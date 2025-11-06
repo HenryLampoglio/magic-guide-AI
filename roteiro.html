@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Roteiro - Guia IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-100">
+    <div class="min-h-screen p-8 md:p-12">
+      <div class="max-w-5xl mx-auto">
+        <header class="flex justify-start items-center mb-8">
+          <a
+            href="index.html"
+            class="flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-xl font-bold shadow-md hover:bg-gray-50 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+              <path
+                fill-rule="evenodd"
+                d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                clip-rule="evenodd" />
+            </svg>
+            Voltar
+          </a>
+        </header>
+
+        <main>
+          <section class="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+            <h2 class="text-3xl font-bold text-gray-900" id="roteiro-titulo">Carregando Roteiro...</h2>
+            <p class="text-gray-600 mt-2 text-lg" id="roteiro-datas"></p>
+
+            <div class="mt-10 space-y-8 divide-y divide-gray-200" id="lista-roteiro">
+              <div class="pt-8 first:pt-0">
+                <div class="h-8 bg-gray-200 rounded-md w-3/4 animate-pulse"></div>
+                <div class="space-y-6 mt-6">
+                  <div class="h-20 bg-gray-200 rounded-md w-full animate-pulse"></div>
+                  <div class="h-20 bg-gray-200 rounded-md w-full animate-pulse"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="render.js" defer></script>
+  </body>
+</html>
